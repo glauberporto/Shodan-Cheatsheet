@@ -171,7 +171,3 @@ Modelo de PR:
 ## 📜 Licença
 Conteúdo para fins educacionais. Não é uma licença de software.
 
----
-
-> Feito pra usar **agora**. Se quiser, eu também gero um `LICENSE` (ex.: MIT) e um `CONTRIBUTING.md`. Diga qual prefere.
-
