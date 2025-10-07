@@ -1,66 +1,55 @@
 # Shodan-Cheatsheet
 Alguns Filtros para Shodan
 
-# NOME DO SEU PROJETO
+# Guia Completo da CLI do Shodan para Kali Linux
 
-Uma breve descrição sobre o que seu projeto faz.
+![Kali + Shodan](https://i.imgur.com/gAYa7d9.png)
 
-## Tabela de Conteúdos
+> Um tutorial prático e direto ao ponto para dominar a interface de linha de comando (CLI) do Shodan no Kali Linux. Explore a internet de dispositivos conectados diretamente do seu terminal.
 
-- [Seção 1](#seção-1)
-- [Seção 2](#seção-2)
-- [Seção 3](#seção-3)
-- [Como Contribuir](#como-contribuir)
-- [Licença](#licença)
+Este guia é focado em usuários do Kali Linux e aborda desde a instalação otimizada até comandos avançados de busca e análise, essenciais para profissionais de OSINT e cibersegurança.
 
 ---
 
-## Seção 1
+## 📖 Tabela de Conteúdos
 
-Instalaçao do Shodan via Terminal
-
-| Comando | Descrição | Exemplo |
-| :--- | :--- | :--- |
-| `pip install shodan` | instalação do Shodan via terminal. | `exemplo do comando 1` |
-| `comando_2` | Descrição do que o comando 2 faz. | `exemplo do comando 2` |
-| `comando_3` | Descrição do que o comando 3 faz. | `exemplo do comando 3` |
-
----
-
-## Seção 2
-
-Uma descrição do que esta seção aborda.
-
-| Filtro | Descrição |
-| :--- | :--- |
-| `filtro_a` | Descrição do que o filtro a faz. |
-| `filtro_b` | Descrição do que o filtro b faz. |
-| `filtro_c` | Descrição do que o filtro c faz. |
+1.  [Por que usar a CLI do Shodan no Kali?](#-por-que-usar-a-cli-do-shodan-no-kali)
+2.  [Pré-requisitos](#-pré-requisitos)
+3.  [Instalação e Configuração](#-instalação-e-configuração)
+4.  [Guia de Comandos Essenciais](#-guia-de-comandos-essenciais)
+    * [Comandos de Informação](#comandos-de-informação)
+    * [Pesquisa e Contagem (`search` e `count`)](#pesquisa-e-contagem-search-e-count)
+    * [Análise de Alvos (`host`)](#análise-de-alvos-host)
+    * [Estatísticas de Busca (`stats`)](#estatísticas-de-busca-stats)
+    * [Scanner de Rede (`scan`)](#scanner-de-rede-scan)
+5.  [Filtros de Busca Avançados](#-filtros-de-busca-avançados)
+6.  [Dicas e Truques](#-dicas-e-truques)
+7.  [Licença](#-licença)
 
 ---
 
-## Seção 3
+## 🤔 Por que usar a CLI do Shodan no Kali?
 
-Uma descrição do que esta seção aborda.
-
-| Operador | Descrição |
-| :--- | :--- |
-| `+` | Inclui termos na busca. |
-| `-` | Exclui termos da busca. |
-| `*` | Funciona como um curinga. |
+O Kali Linux é a distribuição padrão para pentest e análise de segurança. A CLI do Shodan se integra perfeitamente a esse ambiente, permitindo:
+* **Automação:** Crie scripts em Bash ou Python para automatizar buscas e coletar dados em massa.
+* **Integração:** Combine a saída do Shodan com outras ferramentas do Kali, como Nmap, Metasploit ou Recon-ng.
+* **Eficiência:** Obtenha resultados rápidos sem a necessidade de um navegador, mantendo seu fluxo de trabalho no terminal.
 
 ---
 
-## Como Contribuir
+## ✅ Pré-requisitos
 
-Instruções sobre como outras pessoas podem contribuir para o seu projeto. Você pode incluir informações sobre como reportar bugs, sugerir novas funcionalidades ou submeter pull requests.
+* **Kali Linux:** Este guia assume que você está usando uma versão atualizada do Kali.
+* **Conta Shodan e Chave de API:** Você precisa da sua chave de API, que pode ser encontrada na página da sua conta em [shodan.io](https://account.shodan.io).
 
-1.  Faça um "fork" do projeto.
-2.  Crie uma nova "branch" (`git checkout -b feature/nova-feature`).
-3.  Faça o "commit" das suas alterações (`git commit -m 'Adiciona nova feature'`).
-4.  Faça o "push" para a "branch" (`git push origin feature/nova-feature`).
-5.  Abra um "Pull Request".
+---
 
-## Licença
+## 🛠️ Instalação e Configuração
 
-Este projeto está sob a licença [NOME DA LICENÇA]. Veja o arquivo `LICENSE` para mais detalhes.
+O Kali Linux já vem com Python e `pip` pré-instalados, o que simplifica o processo.
+
+### 1. Instale a CLI do Shodan
+
+Abra seu terminal e execute o comando:
+```bash
+sudo pip install shodan
