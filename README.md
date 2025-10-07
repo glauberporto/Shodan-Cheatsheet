@@ -17,11 +17,11 @@ Uma breve descrição sobre o que seu projeto faz.
 
 ## Seção 1
 
-Uma descrição do que esta seção aborda.
+Instalaçao do Shodan via Terminal
 
 | Comando | Descrição | Exemplo |
 | :--- | :--- | :--- |
-| `comando_1` | Descrição do que o comando 1 faz. | `exemplo do comando 1` |
+| `pip install shodan` | instalação do Shodan via terminal. | `exemplo do comando 1` |
 | `comando_2` | Descrição do que o comando 2 faz. | `exemplo do comando 2` |
 | `comando_3` | Descrição do que o comando 3 faz. | `exemplo do comando 3` |
 
